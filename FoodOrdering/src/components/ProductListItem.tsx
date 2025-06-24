@@ -4,7 +4,7 @@ import Colors from "../constants/Colors";
 import { Product } from "../types/types";
 import { Link } from "expo-router";
 
-const defaultPizzaImage =
+export const defaultPizzaImage =
   "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/food/peperoni.png";
 
 type ProductListItemProps = {

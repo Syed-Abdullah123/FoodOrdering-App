@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, Image, Pressable } from "react-native";
 import Colors from "../constants/Colors";
-import { Product } from "../app/types";
+import { Product } from "../types/types";
 import { Link } from "expo-router";
 
 const defaultPizzaImage =

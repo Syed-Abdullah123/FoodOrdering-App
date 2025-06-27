@@ -12,11 +12,32 @@ export default function MenuStack() {
         options={{
           title: "Menu",
           headerRight: () => (
-            <Link href="/cart" asChild>
+            <Link href="/(admin)/menu/create" asChild>
               <Pressable>
                 {({ pressed }) => (
                   <FontAwesome
-                    name="shopping-cart"
+                    name="plus-square-o"
+                    size={25}
+                    color={Colors.light.text}
+                    style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
+                  />
+                )}
+              </Pressable>
+            </Link>
+          ),
+          presentation: "modal",
+        }}
+      />
+      <Stack.Screen
+        name="[id]"
+        options={{
+          title: "Menu",
+          headerRight: () => (
+            <Link href="/" asChild>
+              <Pressable>
+                {({ pressed }) => (
+                  <FontAwesome
+                    name="pencil"
                     size={25}
                     color={Colors.light.text}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
